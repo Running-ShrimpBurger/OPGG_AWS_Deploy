@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /home/ec2-user/server/src
-npm start
-pm2 start npm --name "opgg" -- start
-pm2 startup
-pm2 save
-pm2 restart all
+sudo npm start
+sudo pm2 start npm --name "opgg" -- start
+sudo pm2 startup
+sudo pm2 save
+sudo pm2 restart all
