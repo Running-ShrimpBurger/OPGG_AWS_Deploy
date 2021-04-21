@@ -1,8 +1,7 @@
 import { delay, put, call, takeLatest, all } from "redux-saga/effects";
 import { searchUserActions } from "./slice";
 
-// const apiKey = process.env.REACT_APP_LOL_API_KEY;
-const apiKey="RGAPI-484758ba-b9c5-4cf0-afd5-c22f8dc7f2bb";
+const apiKey = process.env.REACT_APP_LOL_API_KEY;
 
 async function fetchUserApi(name) {
   const result = await fetch(
